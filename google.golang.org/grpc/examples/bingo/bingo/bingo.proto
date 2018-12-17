@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package bingo;
+
+service Gambler {
+  rpc Guess (Request) returns (Result) {}
+}
+
+message Request {
+  string name = 1;
+}
+
+message Result {
+  string message = 1;
+}
